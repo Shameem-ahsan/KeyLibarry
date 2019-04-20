@@ -10,19 +10,10 @@ import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
-
-
 import com.kaopiz.kprogresshud.KProgressHUD;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 
@@ -63,7 +54,7 @@ public class Key {
     }
 
 
-    public void kprogress_show(Context context) {
+    public static void kprogress_show(Context context) {
         hud1 = KProgressHUD.create(context)
                 .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
                 .setLabel("Please wait")
@@ -74,7 +65,7 @@ public class Key {
 
     }
 
-    public void kprogressdismiss() {
+    public static void kprogressdismiss() {
         hud1.dismiss();
     }
 
